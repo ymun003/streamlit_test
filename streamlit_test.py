@@ -20,7 +20,7 @@ if user_id=='abc' and user_password == '1234':
     image_files = ['환영합니다.png','2.png','3.png','5.png','1.jpg','4.png']
     sel_index = sel_options.index(user_opt)
     img_file = image_files[sel_index]
-    img_local = Image.open(f"img/{img_file}")
+    img_local = Image.open(f"{img_file}")
     st.image(img_local,caption = user_opt)
 
 
